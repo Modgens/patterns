@@ -1,6 +1,6 @@
 package patterns.example;
 
-class Rental {
+public class Rental {
     private final Movie movie;
     private final int daysRented;
 
