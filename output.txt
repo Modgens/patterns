@@ -1,0 +1,6 @@
+<h1>Rental Record for Charlie</h1>
+<table>
+	<tr><td>qweras</td><td>6.5</td></tr>
+</table>
+<p>Amount owed is 6.5</p>
+<p>You earned 1 frequent renter points</p>
