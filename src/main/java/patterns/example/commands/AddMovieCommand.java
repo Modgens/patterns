@@ -34,7 +34,7 @@ public class AddMovieCommand implements Command {
         // Створення об'єкта Movie і додавання його до каталогу
         Movie movie = Movie.builder()
                 .title(title)
-                .priceStrategy(catalog.getStrategy(scanner))
+                .filmType(catalog.getStrategy(scanner))
                 .countryOfOrigin(countryOfOrigin)
                 .description(description)
                 .director(director)

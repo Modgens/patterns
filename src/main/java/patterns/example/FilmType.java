@@ -1,7 +1,7 @@
 package patterns.example;
 
 public enum FilmType {
-    COMMON {
+    REGULAR {
         @Override
         public double calculatePrice(int daysRented) {
             double price = 2;
@@ -25,6 +25,12 @@ public enum FilmType {
                 price += (daysRented - 3) * 1.5;
             }
             return price;
+        }
+    },
+    DEFAULT {
+        @Override
+        public double calculatePrice(int daysRented) {
+            return daysRented*5;
         }
     };
 

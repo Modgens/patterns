@@ -1,8 +1,8 @@
 package patterns.example.template_method;
 
 import patterns.example.Customer;
+import patterns.example.FilmType;
 import patterns.example.Rental;
-import patterns.example.strategies.NewReleasePriceStrategy;
 
 
 /*
@@ -31,7 +31,7 @@ public abstract class StatementFormatter {
 
             // Додавання бонусних балів
             frequentRenterPoints++;
-            if (rental.getMovie().getPriceStrategy() instanceof NewReleasePriceStrategy && rental.getDaysRented() > 1)
+            if (rental.getMovie().getFilmType().equals(FilmType.NEW_RELEASE) && rental.getDaysRented() > 1)
                 frequentRenterPoints++;
 
             // Форматування даних по оренді

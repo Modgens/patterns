@@ -5,7 +5,6 @@ import patterns.example.Movie;
 import patterns.example.Rental;
 import patterns.example.template_method.HtmlStatementFormatter;
 import patterns.example.template_method.PlainTextStatementFormatter;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
